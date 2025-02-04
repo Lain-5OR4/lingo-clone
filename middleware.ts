@@ -1,6 +1,7 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 
+// ログイン不要のページを指定
 const isPublicRoute = createRouteMatcher(["/"]);
 
 export default clerkMiddleware((auth, request) => {
